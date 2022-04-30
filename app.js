@@ -79,6 +79,7 @@ app.get("/campgrounds/:id", function(req, res) {
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
     console.log ("YelpCamp Has Started");
 });
