@@ -4,7 +4,7 @@ var express      = require("express"),
     mongoose     = require ("mongoose"),
     Campground   = require("./models/campground");
 
-mongoose.connect("mongodb+srv://anand:worldwar3@cluster0.wfy63.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://anand:worldwar@3@cluster0.wfy63.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
